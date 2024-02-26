@@ -104,7 +104,7 @@ nav {
   padding: 0 20px;
   background-color: var(--primary);
   transition: all 0.5s ease;
-  text-align: center; /* Centra el contenido del botón */
+  text-align: center;
 }
 
 .button-wrapper:hover {
@@ -116,8 +116,8 @@ nav {
 .button-wrapper a {
   color: var(--background);
   display: flex;
-  align-items: center; /* Centra verticalmente el contenido */
-  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center;
+  justify-content: center;
 }
 
 .button-wrapper i {
@@ -136,15 +136,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 100px; */
   background-size: cover;
   background: var(--background);
-  /* height: 100vh; */
   margin-top: 50px;
   margin-bottom: 50px;
   gap: 20px;
-  /* width: 100vw; */
-  /* max-width: 1320px; */
 }
 .hero_info {
   display: flex;
@@ -209,8 +205,6 @@ main {
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
-  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
 }
 .card p {
   font-size: 0.8em;
@@ -226,11 +220,7 @@ main {
 }
 .about-us {
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
   background: var(--background);
-  /* gap: 30px; */
   max-width: 1320px;
   padding: 50px;
 }
@@ -308,7 +298,6 @@ main {
 }
 .footer-container {
   max-width: 1140px;
-  /* display: flex; */
   justify-content: space-between;
   margin: auto;
   display: grid;
@@ -349,5 +338,21 @@ main {
 }
 .social-foot-bottom i:hover {
   color: var(--primary);
+  transition: all 0.5s ease;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.18) 0px 2px 4px);
+}
+.whatsapp-float:hover {
+  cursor: pointer;
+  transform: scale(1.1);
   transition: all 0.5s ease;
 }
